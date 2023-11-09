@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-pt-24 scroll-smooth font-lato">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,31 +12,53 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <!-- Peace Sans font-family -->
+  <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet">
+  <!-- Garamond - самый "быстрый" шрифт -->
+  <link href="https://fonts.cdnfonts.com/css/garamond" rel="stylesheet">
+  <!-- Lato -->
+  <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
   <title>Агрофизика</title>
 </head>
 
 <body class="relative bg-[#f7f5f3] text-slate-900">
   <!-- Навигация -->
-  <div class="sticky top-0 z-50 w-screen p-3">
-    <nav class="flex h-12 items-center justify-between rounded-3xl border bg-white p-5 shadow-xl">
-      <a href="#home"
-        class="inline-flex items-center justify-start text-lg font-extrabold leading-tight text-violet-800">
-        <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-          АГРО
-        </span>
-        <img class="inline-block" src="assets/images/logo.png" alt="Логотип компании" />
-        <span class="bg-gradient-to-r from-purple-600 from-5% to-pink-500 bg-clip-text text-transparent">
-          ИЗИКА
-        </span>
-      </a>
-      <a href="#" class="text-lg font-bold tracking-wide hover:text-pink-600">
-        МЕНЮ
-      </a>
-    </nav>
-  </div>
+  <nav class="fixed top-0 z-50 w-screen p-3">
+
+    <!-- Навигационная планка -->
+    <div id="navbar" class="h-fit rounded-3xl border bg-white shadow-xl">
+      <div class="py-2 flex items-center justify-between h-full px-5">
+        <a href="#" _="on click remove .flex from #menu add .hidden to #menu"
+          class="inline-flex items-center justify-start text-lg font-extrabold leading-tight text-violet-800">
+          <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            АГРО
+          </span>
+          <img class="inline-block" src="assets/images/logo.png" alt="Логотип компании" />
+          <span class="bg-gradient-to-r from-purple-600 from-5% to-pink-500 bg-clip-text text-transparent">
+            ИЗИКА
+          </span>
+        </a>
+
+        <button _="on click toggle between .hidden and .flex on #menu"
+          class="text-lg font-bold tracking-wide hover:text-pink-600">
+          МЕНЮ
+        </button>
+      </div>
+
+      <!-- Развернутое меню в мобильной версии -->
+      <ul id="menu" class="hidden flex-col gap-5 my-7 items-center justify-center text-2xl font-bold">
+        <li><a href="#korm-plus" _="on click remove .flex from #menu add .hidden to #menu">Корм+</a></li>
+        <li><a href="#features" _="on click remove .flex from #menu add .hidden to #menu">Функционал системы</a></li>
+        <li><a href="#clients" _="on click remove .flex from #menu add .hidden to #menu">Наши клиенты</a></li>
+        <li><a href="#contacts" _="on click remove .flex from #menu add .hidden to #menu">Контакты</a></li>
+      </ul>
+    </div>
+
+
+  </nav>
 
   <!-- Заголовок главной страницы -->
-  <header class="mx-5 pt-2">
+  <header class="mx-5 pt-2 mt-24">
     <h1
       class="bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text text-center text-4xl font-extrabold text-transparent">
       Технологии
@@ -191,7 +213,7 @@
       </p>
     </header>
 
-    <p class="mt-5">
+    <p class="mt-5 text-center">
       Основная цель внедрения системы —
       <strong class="inline-block rounded-md bg-gradient-to-r from-violet-300 to-pink-300 px-2 py-1">
         увеличение прибыли предприятия
@@ -201,7 +223,7 @@
     </p>
 
     <!-- Преимущества системы Корм+ -->
-    <ul class="mt-5 flex min-h-fit flex-col gap-5">
+    <ul class="mt-5 flex min-h-fit flex-col gap-5 leading-tight">
       <li class="flex items-center justify-start gap-5">
         <div
           class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-indigo-200 text-3xl font-bold text-indigo-700">
@@ -307,7 +329,7 @@
     </ul>
 
     <!-- Программное обеспечение комплекса Корм+ -->
-    <h2
+    <h2 id="features"
       class="mt-16 bg-gradient-to-r from-indigo-700 to-pink-500 bg-clip-text text-center text-2xl font-extrabold leading-none tracking-tight text-transparent">
       Система максимально адаптирована под структуру работы МТФ на территории
       Республики Беларусь
@@ -478,31 +500,33 @@
     </ul>
   </section>
 
-  <h1
+  <h1 id="contacts"
     class="mt-20 bg-gradient-to-r from-indigo-700 to-pink-500 bg-clip-text text-center text-4xl font-extrabold text-transparent">
     Вместе, к новым экономическим высотам!
   </h1>
 
   <div
-    class="mx-5 rounded-xl shadow-xl border flex flex-col gap-6 my-6 p-3 items-center justify-center shadow-teal-300">
+    class="mx-5 my-6 flex flex-col items-center justify-center gap-6 rounded-xl border p-3 shadow-xl shadow-teal-300">
     <div>
       <a href="tel:+375297513025" class="text-xl leading-relaxed">
-        <b>+375 (29) 751-30-25</b><br>
+        <b>+375 (29) 751-30-25</b>
+        <br />
         Дмитрий Николаевич
       </a>
     </div>
     <div>
       <a href="tel:+375298744463" class="text-xl leading-relaxed">
-        <b>+375 (29) 874-44-63</b><br>
+        <b>+375 (29) 874-44-63</b>
+        <br />
         Сергей Николаевич
       </a>
     </div>
   </div>
 
-  <footer id="contacts" class="mt-20 pb-10 bg-gradient-to-r from-indigo-700 to-pink-500 text-white">
-    <div class="mx-5 pt-7 flex flex-col gap-10 items-center">
+  <footer id="address" class="mt-20 bg-gradient-to-r from-indigo-700 to-pink-500 pb-10 text-white">
+    <div class="mx-5 flex flex-col items-center gap-10 pt-7">
       <div>
-        <p class="text-2xl text-center font-extrabold">Юридический адрес:</p>
+        <p class="text-center text-2xl font-extrabold">Юридический адрес:</p>
         <address class="pt-3 text-center">
           <b>УНП 693249216</b>
           , Республика Беларусь, Минская обл., г.Борисов, ул.Михаила Морозова,
@@ -511,36 +535,41 @@
       </div>
 
       <div>
-        <h2 class="text-2xl text-center font-extrabold">Почтовый адрес:</h2>
-        <address class="pt-3">222520, Минская обл, г.Борисов, а/я 794.</address>
+        <h2 class="text-center text-2xl font-extrabold">Почтовый адрес:</h2>
+        <address class="pt-3">
+          222520, Минская обл, г.Борисов, а/я 794.
+        </address>
       </div>
 
       <div>
-        <h2 class="text-2xl text-center font-extrabold">email:</h2>
-        <a href="mailto:Dmitry_Shuvalov@mail.ru" class="pt-3">Dmitry_Shuvalov@mail.ru</a>
+        <h2 class="text-center text-2xl font-extrabold">email:</h2>
+        <a href="mailto:Dmitry_Shuvalov@mail.ru" class="pt-3">
+          Dmitry_Shuvalov@mail.ru
+        </a>
       </div>
 
       <div>
-        <h2 class="text-2xl text-center font-extrabold">Телефоны:</h2>
-        <div class="text-center pt-3">
+        <h2 class="text-center text-2xl font-extrabold">Телефоны:</h2>
+        <div class="pt-3 text-center">
           <a href="tel:+375297513025" class="rtext-center">
-            +375 (29) 751-30-25<br>
+            +375 (29) 751-30-25
+            <br />
             Дмитрий Николаевич
           </a>
         </div>
-        <div class="text-center pt-5">
+        <div class="pt-5 text-center">
           <a href="tel:+375298744463" class="text-center">
-            +375 (29) 874-44-63<br>
+            +375 (29) 874-44-63
+            <br />
             Сергей Николаевич
           </a>
         </div>
       </div>
     </div>
-
-    <!-- Градиентный футер -->
-
-
   </footer>
+
+  <!-- Меню сайта -->
+  <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
 </body>
 
 </html>
