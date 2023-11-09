@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-pt-24 scroll-smooth font-lato">
+<html lang="en" class="scroll-pt-24 scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,9 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
   <!-- Peace Sans font-family -->
-  <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet">
+  <!-- <link href="https://fonts.cdnfonts.com/css/peace-sans" rel="stylesheet"> -->
   <!-- Garamond - самый "быстрый" шрифт -->
-  <link href="https://fonts.cdnfonts.com/css/garamond" rel="stylesheet">
+  <!-- <link href="https://fonts.cdnfonts.com/css/garamond" rel="stylesheet"> -->
   <!-- Lato -->
   <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet">
   <title>Агрофизика</title>
@@ -39,8 +39,7 @@
           </span>
         </a>
 
-        <button _="on click toggle between .hidden and .flex on #menu"
-          class="text-lg font-bold tracking-wide hover:text-pink-600">
+        <button _="on click toggle between .hidden and .flex on #menu" class="text-lg font-bold tracking-wide">
           МЕНЮ
         </button>
       </div>
@@ -53,8 +52,6 @@
         <li><a href="#contacts" _="on click remove .flex from #menu add .hidden to #menu">Контакты</a></li>
       </ul>
     </div>
-
-
   </nav>
 
   <!-- Заголовок главной страницы -->
@@ -500,28 +497,33 @@
     </ul>
   </section>
 
-  <h1 id="contacts"
-    class="mt-20 bg-gradient-to-r from-indigo-700 to-pink-500 bg-clip-text text-center text-4xl font-extrabold text-transparent">
-    Вместе, к новым экономическим высотам!
-  </h1>
+  <!-- Контакты -->
+  <section id="contacts">
+    <header>
+      <h1
+        class="mt-20 bg-gradient-to-r from-indigo-700 to-pink-500 bg-clip-text text-center text-4xl font-extrabold text-transparent">
+        Вместе, к новым экономическим высотам!
+      </h1>
+    </header>
 
-  <div
-    class="mx-5 my-6 flex flex-col items-center justify-center gap-6 rounded-xl border p-3 shadow-xl shadow-teal-300">
-    <div>
-      <a href="tel:+375297513025" class="text-xl leading-relaxed">
-        <b>+375 (29) 751-30-25</b>
-        <br />
-        Дмитрий Николаевич
-      </a>
+    <div
+      class="mx-5 my-6 flex flex-col items-center justify-center gap-6 rounded-xl border p-3 shadow-xl shadow-teal-300">
+      <div>
+        <a href="tel:+375297513025" class="text-xl leading-relaxed">
+          <b>+375 (29) 751-30-25</b>
+          <br />
+          Дмитрий Николаевич
+        </a>
+      </div>
+      <div>
+        <a href="tel:+375298744463" class="text-xl leading-relaxed">
+          <b>+375 (29) 874-44-63</b>
+          <br />
+          Сергей Николаевич
+        </a>
+      </div>
     </div>
-    <div>
-      <a href="tel:+375298744463" class="text-xl leading-relaxed">
-        <b>+375 (29) 874-44-63</b>
-        <br />
-        Сергей Николаевич
-      </a>
-    </div>
-  </div>
+  </section>
 
   <footer id="address" class="mt-20 bg-gradient-to-r from-indigo-700 to-pink-500 pb-10 text-white">
     <div class="mx-5 flex flex-col items-center gap-10 pt-7">

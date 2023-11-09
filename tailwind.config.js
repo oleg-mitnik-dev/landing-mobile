@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['"Roboto"', ...defaultTheme.fontFamily.sans],
+        'sans': ['"Lato"', '"Roboto"', ...defaultTheme.fontFamily.sans],
         'roboto': '"Roboto", sans-serif',
-        'peace': '"Peace Sans", sans- serif',
-        'garamond': '"Garamond", sans-serif',
+        // 'peace': '"Peace Sans", sans- serif',
+        // 'garamond': '"Garamond", sans-serif',
         'lato': '"Lato", sans-serif'
       },
     },
